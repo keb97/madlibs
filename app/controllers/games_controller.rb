@@ -15,9 +15,15 @@ class GamesController < ApplicationController
     else
       flash[:notice] = "Something about that didn't work, unfortunately."
       render :action => new
+    end
   end
 
   def show
     @game = Game.find(params[:id])
   end
+
+  private
+    def game_params
+      params.require(:game).permit!
+    end
 end
