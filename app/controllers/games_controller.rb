@@ -8,8 +8,8 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new(params[:game])
-    if @category.save
+    @game = Game.new(game_params)
+    if @game.save
       flash[:notice] = "Here you go!"
       redirect_to @game
     else

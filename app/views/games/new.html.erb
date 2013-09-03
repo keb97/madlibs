@@ -1,0 +1,44 @@
+<h2>New Game</h2>
+<%= form_for(@game) do |f| %>
+  <p>
+    <%= f.label :word1, "Year" %><br />
+    <%= f.text_field :word1 %>
+  </p>
+  <p>
+    <%= f.label :word2, "Soccer club" %><br />
+    <%= f.text_field :word2 %>
+  </p>
+  <p>
+    <%= f.label :word3, "Soccer player" %><br />
+    <%= f.text_field :word3 %>
+  </p>
+  <p>
+    <%= f.label :word4, "Soccer club" %><br />
+    <%= f.text_field :word4 %>
+  </p>
+  <p>
+    <%= f.label :word5, "Country" %><br />
+    <%= f.text_field :word5 %>
+  </p>
+  <p>
+    <%= f.label :word6, "Number" %><br />
+    <%= f.text_field :word6 %>
+  </p>
+  <p>
+    <%= f.label :word7, "Ordinal number" %><br />
+    <%= f.text_field :word7 %>
+  </p>
+  <p>
+    <%= f.label :word8, "Soccer player" %><br />
+    <%= f.text_field :word8 %>
+  </p>
+  <p>
+    <%= f.label :word9, "Profession" %><br />
+    <%= f.text_field :word9 %>
+  </p>
+  <p>
+    <%= f.label :word10, "Why was Tim Tebow cut from the Patriots?" %><br />
+    He... <%= f.text_field :word10 %>
+  </p>
+  <%= f.submit "Make the new thing" %>
+<% end %>
