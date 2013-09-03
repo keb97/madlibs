@@ -25,5 +25,5 @@ production:
   database: madlibs_production
   pool: 5
   timeout: 5000
-  username: kathryn
-  password: 123
+  username:
+  password:
