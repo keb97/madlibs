@@ -1,5 +1,5 @@
 <h2>New Game</h2>
-<%= form_for(@game) do |f| %>
+<%= simple_form_for @game do |f| %>
   <p>
     <%= f.label :word1, "Year" %><br />
     <%= f.text_field :word1 %>
