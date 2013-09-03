@@ -1,4 +1,5 @@
-<h2>Now you fill in the blanks!</h2>
+<p class="heading">Fill-in time!</p>
+<p> Fill in each field with whatever example of the designated category you like. Feel free to be a little silly with it! </p>
 <%= simple_form_for @game do |f| %>
   <p>
     <%= f.input :word1, label: "Year" %>
@@ -19,7 +20,7 @@
     <%= f.input :word6, label: "Number" %>
   </p>
   <p>
-    <%= f.input :word7, label: "Ordinal number" %>
+    <%= f.input :word7, label: "Ordinal number", hint: "For example, 1st, 10th, or 1000th" %>
   </p>
   <p>
     <%= f.input :word8, label: "Soccer player" %>
@@ -30,5 +31,5 @@
   <p>
     <%= f.input :word10, label: "Why was Tim Tebow cut from the Patriots? He..." %>
   </p>
-  <%= f.submit "Generate your fill-in!" %>
+  <%= f.submit "Generate your filled-in story!" %>
 <% end %>
