@@ -1,13 +1,26 @@
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 60px;
+  }
 @import "bootstrap-responsive";
+
 .heading {
   font-size: 35px;
   padding-bottom: 30px;
 }
 .btn {
-  margin: 15px;
+  font-size: 35px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  width: 458px;
 }
+.blank-button{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
 a{
   color: #000000;
 }
@@ -17,3 +30,29 @@ a{
 form{
   text-align: center;
 }
+.container-narrow{
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+a{
+  color: #FFFFFF;
+}
+a:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.container{
+  text-align: center;
+}
+
+.string.optional.control-label{
+  font-size: 30px;
+}
+p{
+  font-size: 25px;
+  line-height: 35px;
+}
+

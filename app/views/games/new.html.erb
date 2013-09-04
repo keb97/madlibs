@@ -2,7 +2,7 @@
 <p> Fill in each field with whatever example of the designated category you like. Feel free to be a little silly with it! </p>
 <%= simple_form_for @game do |f| %>
   <p>
-    <%= f.input :word1, label: "Adjective" %>
+    <%= f.input :word1, label: "Adjective", wrapper_html: { class: 'new-input' } %>
   </p>
   <p>
     <%= f.input :word2, label: "Noun" %>
@@ -31,5 +31,7 @@
   <p>
     <%= f.input :word12, label: "City" %>
   </p>
-  <%= f.submit "Generate your filled-in story!" %>
+    <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
+      Fill in your story!
+    <% end %>
 <% end %>
