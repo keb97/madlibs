@@ -1,11 +1,13 @@
 @import "bootstrap";
 body { padding-top: 60px;
+background-color:#cccccc;
   }
 @import "bootstrap-responsive";
 
 .heading {
   font-size: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 .btn {
   font-size: 35px;
@@ -56,3 +58,13 @@ p{
   line-height: 35px;
 }
 
+.sharing{
+  padding-top: 20px;
+}
+
+.share-link{
+  color: #000000;
+}
+.btn-large{
+  margin-top: 35px;
+}

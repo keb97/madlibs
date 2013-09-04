@@ -1,13 +1,20 @@
 <p class="heading">Labor Day weekend in review</p>
 
 <p>We've just completed yet another <span class="filled-in"><%= @game.word1 %></span> Labor Day weekend here in the United States of <span class="filled-in"><%= @game.word2 %></span>. While Labor Day is traditionally celebrated with <span class="filled-in"><%= @game.word3 %></span> and <span class="filled-in"><%= @game.word4 %></span>, this year we saw an uptick in people spending time on their <span class="filled-in"><%= @game.word6 %></span> in <span class="filled-in"><%= @game.word7 %></span>. In national news, <span class="filled-in"><%= @game.word9 %></span> appeared on television speaking about the ills of <span class="filled-in"><%= @game.word10 %></span>, and the international <span class="filled-in"><%= @game.word11 %></span> competition kicked off in <span class="filled-in"><%= @game.word12 %></span>.
-<div>
-<span class="btn"><%= link_to "Make another!", new_game_path%></span><br />
+
+<div class = "sharing">
+  <p>
+  Share your fill-in using this link: <%= link_to request.original_url, request.original_url, class: "share-link" %>
+  </p>
 </div>
 <div>
-  Share your fill-in using this link: <%= link_to request.original_url, request.original_url %>
-</div>
+<p>
 Or tweet your fill-in to your followers:
     <a href="https://twitter.com/share" class="twitter-share-button" text= "Checkoutthis" data-lang="en">Tweet</a>
 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </p>
+</div>
+<div>
+<span class="btn btn-large btn-info"><%= link_to "Make another!", new_game_path%></span><br />
+</div>
