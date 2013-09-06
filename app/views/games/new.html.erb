@@ -2,31 +2,43 @@
 <p> Fill in each field with whatever example of the designated category you like. Feel free to be a little silly with it! </p>
 <%= simple_form_for @game do |f| %>
   <p>
-    <%= f.input :word1, label: "Adjective" %>
+    <%= f.input :word1, label: "Number" %>
   </p>
   <p>
-    <%= f.input :word3, label: "Verb ending in -ing" %>
+    <%= f.input :word2, label: "Food" %>
   </p>
   <p>
-    <%= f.input :word4, label: "Plural noun" %>
+    <%= f.input :word3, label: "City" %>
   <p/>
   <p>
-    <%= f.input :word6, label: "Plural noun" %>
+    <%= f.input :word4, label: "Car parts" %>
   </p>
   <p>
-    <%= f.input :word7, label: "Location" %>
+    <%= f.input :word5, label: "Onamonapia" %>
   </p>
   <p>
-    <%= f.input :word9, label: "Famous person" %>
+    <%= f.input :word6, label: "Adjective" %>
   </p>
   <p>
-    <%= f.input :word10, label: "Minor annoyance" %>
+    <%= f.input :word7, label: "City" %>
   </p>
   <p>
-    <%= f.input :word11, label: "Verb ending in -ing" %>
+    <%= f.input :word8, label: "Number" %>
   </p>
   <p>
-    <%= f.input :word12, label: "City" %>
+    <%= f.input :word9, label: "City" %>
+  </p>
+  <p>
+    <%= f.input :word10, label: "Office supplies" %>
+  </p>
+  <p>
+    <%= f.input :word11, label: "City" %>
+  </p>
+  <p>
+    <%= f.input :word12, label: "Body part" %>
+  </p>
+  <p>
+    <%= f.input :word13, label: "Famous person" %>
   </p>
     <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
       Fill in your story!
