@@ -1,4 +1,5 @@
 class MadeGamesController < ApplicationController
+
   def index
     @made_games = MadeGame.find(:all)
   end
@@ -26,4 +27,5 @@ class MadeGamesController < ApplicationController
     def made_game_params
       params.require(:made_game).permit!
     end
+
 end

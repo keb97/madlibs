@@ -1,7 +1,11 @@
 Madlibs::Application.routes.draw do
   root :to => "games#index"
 
-  resources :games, :made_games
+  resources :games
+
+  resources :made_games do
+    resources :made_games_instances
+  end
 
   get ':action' => 'static_content#:action'
 

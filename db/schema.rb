@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130909210827) do
+ActiveRecord::Schema.define(version: 20130909213157) do
 
   create_table "games", force: true do |t|
     t.string   "word1"
@@ -44,6 +44,20 @@ ActiveRecord::Schema.define(version: 20130909210827) do
     t.string   "word28"
     t.string   "word29"
     t.string   "word30"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "made_game_instances", force: true do |t|
+    t.string   "word1"
+    t.string   "word2"
+    t.string   "word3"
+    t.string   "word4"
+    t.string   "word5"
+    t.string   "word6"
+    t.string   "word7"
+    t.string   "word8"
+    t.integer  "made_game_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
