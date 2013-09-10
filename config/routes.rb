@@ -4,7 +4,7 @@ Madlibs::Application.routes.draw do
   resources :games
 
   resources :made_games do
-    resources :made_games_instances
+    resources :made_game_instances
   end
 
   get ':action' => 'static_content#:action'
