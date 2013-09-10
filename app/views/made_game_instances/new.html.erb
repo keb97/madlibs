@@ -1,11 +1,6 @@
 <%= simple_form_for [@made_game, @made_game_instance] do |f| %>
   <p>
-    <%= f.input :word1, label: @made_game.word1.to_s %>
+    <%= f.input :new_word1, label: @made_game.word1.to_s %>
   </p>
-
-  <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
-      Fill in your story!
-    <% end %>
+  <%= f.button :submit %>
 <% end %>
-
-<%= @made_game.word1 %>

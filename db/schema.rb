@@ -49,14 +49,14 @@ ActiveRecord::Schema.define(version: 20130909213157) do
   end
 
   create_table "made_game_instances", force: true do |t|
-    t.string   "word1"
-    t.string   "word2"
-    t.string   "word3"
-    t.string   "word4"
-    t.string   "word5"
-    t.string   "word6"
-    t.string   "word7"
-    t.string   "word8"
+    t.string   "new_word1"
+    t.string   "new_word2"
+    t.string   "new_word3"
+    t.string   "new_word4"
+    t.string   "new_word5"
+    t.string   "new_word6"
+    t.string   "new_word7"
+    t.string   "new_word8"
     t.integer  "made_game_id"
     t.datetime "created_at"
     t.datetime "updated_at"

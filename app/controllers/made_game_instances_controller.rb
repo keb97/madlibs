@@ -1,5 +1,6 @@
 class MadeGameInstancesController < ApplicationController
   before_filter :find_made_game
+  before_filter :find_made_game_instance, :only => [:show]
 
   def new
     @made_game_instance = @made_game.made_game_instances.build
@@ -27,5 +28,9 @@ class MadeGameInstancesController < ApplicationController
 
     def find_made_game
       @made_game = MadeGame.find(params[:made_game_id])
+    end
+
+    def find_made_game_instance
+      @made_game_instance = @made_game.made_game_instances.find(params[:id])
     end
 end

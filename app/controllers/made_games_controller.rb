@@ -1,4 +1,5 @@
 class MadeGamesController < ApplicationController
+  before_filter :find_made_game, :only => [:show]
 
   def index
     @made_games = MadeGame.find(:all)
@@ -28,4 +29,10 @@ class MadeGamesController < ApplicationController
       params.require(:made_game).permit!
     end
 
+    def find_made_game
+      @made_game = MadeGame.find(params[:id])
+      rescue ActiveRecord::RecordNotFound
+      flash[:alert] = "This game doesn't exist, sorry!"
+      redirect to games_index
+    end
 end
