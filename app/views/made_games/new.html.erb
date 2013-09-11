@@ -1,11 +1,17 @@
+<textarea class = "text100"></textarea>
+
+<div id='post-preview'></div>
+
+<a href="#" class="preview">Preview!</a>
+
+
 <%= simple_form_for @made_game do |f| %>
-  <div class="text1">
+  <div class="text1" id="text1">
   <p>
     <%= f.input :text1, label: "Text 1" %>
   </p>
 </div>
 
-<div id='preview'></div>
 
 <div class="word1">
   <p>
