@@ -1,10 +1,17 @@
 <%= simple_form_for @made_game do |f| %>
+  <div class="text1">
   <p>
     <%= f.input :text1, label: "Text 1" %>
   </p>
+</div>
+
+<div id='preview'></div>
+
+<div class="word1">
   <p>
     <%= f.input :word1, label: "Word 1" %>
   </p>
+</div>
   <p>
     <%= f.input :text2, label: "Text 2" %>
   </p>
@@ -27,3 +34,6 @@
       Fill in your story!
     <% end %>
 <% end %>
+
+
+
