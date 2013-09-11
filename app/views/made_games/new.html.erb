@@ -1,7 +1,7 @@
 <container>
-  <div class="span10">
+  <div class="span11">
     <p>
-      In he "interword text" fields, write your main text. When you come to a word that you want other users to fill in, move down to the next "word description" field and explain what it should be.
+      <strong>Note: </strong>You can have a maximum of <strong>6</strong> interword texts and <strong>5</strong> word descriptions.
     </p>
   </div>
   <div class="span5">
@@ -26,9 +26,9 @@
         <%= f.input :text6, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
 
   </div>
-  <div class="span5">
+  <div class="span6">
     <p id="preview-explain">
-      Type in the fields to the right and see the results appear below. This should help you envision how your final product will fit together. <strong>You cannot make edits after you've pressed submit.</strong>
+      Type in the fields to the right and see the results appear below. This should help you envision how your final product will fit together. <strong>You cannot edit after you've pressed submit.</strong>
     </p>
     <div class="previewbox">
       <div id='post-preview' class="textpreview"></div>
@@ -43,7 +43,7 @@
       <div id='post-preview-11' class="wordpreview"></div>
       <div id='post-preview-6' class="textpreview"></div>
     </div>
-          <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
+      <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
         Submit your new fill-in!
       <% end %>
     <% end %>

@@ -2,6 +2,20 @@
   <p>
     <%= f.input :new_word1, label: @made_game.word1.to_s %>
   </p>
-  <%= f.button :submit %>
+  <p>
+    <%= f.input :new_word2, label: @made_game.word2.to_s %>
+  </p>
+  <p>
+    <%= f.input :new_word3, label: @made_game.word3.to_s %>
+  </p>
+  <p>
+    <%= f.input :new_word4, label: @made_game.word4.to_s %>
+  </p>
+  <p>
+    <%= f.input :new_word5, label: @made_game.word5.to_s %>
+  </p>
+  <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
+    Fill in the blanks!
+  <% end %>
 <% end %>
 
