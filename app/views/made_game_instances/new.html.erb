@@ -1,3 +1,17 @@
+<div class = "sharing">
+  <p>
+  Share this fill-in using this link: <%= link_to request.original_url, request.original_url, class: "share-link" %>
+  </p>
+</div>
+<div>
+<p>
+Or tweet this fill-in to your followers:
+    <a href="https://twitter.com/share" class="twitter-share-button" text= "Checkoutthis" data-lang="en">Tweet</a>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </p>
+</div>
+
 <%= simple_form_for [@made_game, @made_game_instance] do |f| %>
   <p>
     <%= f.input :new_word1, label: @made_game.word1.to_s %>
