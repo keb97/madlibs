@@ -1,0 +1,32 @@
+<p class="fillin">
+  <%= @made_game.text1 %>
+  <span class="filled-in">
+    [<%= @made_game.word1 %>]
+  </span>
+
+  <%= @made_game.text2 %>
+  <span class="filled-in">
+    [<%= @made_game.word2 %>]
+  </span>
+
+  <%= @made_game.text3 %>
+  <span class="filled-in">
+    [<%= @made_game.word3 %>]
+  </span>
+
+  <%= @made_game.text4 %>
+  <span class="filled-in">
+    [<%= @made_game.word4 %>]
+  </span>
+
+  <%= @made_game.text5 %>
+  <span class="filled-in">
+    [<%= @made_game.word5 %>]
+  </span>
+
+    <%= @made_game.text6 %>
+</p>
+
+
+<div class="container-narrow"><span class="btn btn-large btn-info"><%= link_to "Get the form to share!", new_made_game_made_game_instance_path(@made_game) %></span></div>
+

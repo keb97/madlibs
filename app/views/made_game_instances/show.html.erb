@@ -1,0 +1,44 @@
+<p class = "fillin">
+
+  <%= @made_game.text1 %>
+  <span class = "filled-in">
+    <%= @made_game_instance.new_word1 %>
+  </span>
+
+  <%= @made_game.text2 %>
+  <span class = "filled-in">
+    <%= @made_game_instance.new_word2 %>
+  </span>
+
+  <%= @made_game.text3 %>
+  <span class = "filled-in">
+    <%= @made_game_instance.new_word3 %>
+  </span>
+
+  <%= @made_game.text4 %>
+  <span class = "filled-in">
+    <%= @made_game_instance.new_word4 %>
+  </span>
+
+  <%= @made_game.text5 %>
+  <span class = "filled-in">
+    <%= @made_game_instance.new_word5 %>
+  </span>
+
+  <%= @made_game.text6 %>
+</p>
+
+<div class = "sharing">
+  <p>
+  Share this fill-in using this link: <%= link_to request.original_url, request.original_url, class: "share-link" %>
+  </p>
+</div>
+<div>
+<p>
+Or tweet this fill-in to your followers:
+    <a href="https://twitter.com/share" class="twitter-share-button" text= "Checkoutthis" data-lang="en">Tweet</a>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </p>
+</div>
+

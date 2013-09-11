@@ -1,0 +1,2 @@
+module MadeGameInstancesHelper
+end

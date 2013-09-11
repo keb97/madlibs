@@ -1,0 +1,54 @@
+<container>
+  <div class="span11">
+    <p>
+      <strong>Note: </strong>You can have a maximum of <strong>6</strong> interword texts and <strong>5</strong> word descriptions.
+    </p>
+  </div>
+  <div class="span5">
+    <p class = "example">
+      <strong>Example</strong><br/>
+      Interword text: Once upon a time, were seven<br/>
+      Word description: adjective<br/>
+      Interword text: kittens. They lived in<br/>
+      Word description: location<br/>
+    </p>
+    <%= simple_form_for @made_game do |f| %>
+        <%= f.input :text1, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"} %>
+        <%= f.input :word1, label: "Word description", as: :text, :input_html => {:rows => 1, class: "inter"} %>
+        <%= f.input :text2, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
+        <%= f.input :word2, label: "Word description", as: :text, :input_html => {:rows => 1, class: "inter"}  %>
+        <%= f.input :text3, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
+        <%= f.input :word3, label: "Word description", as: :text, :input_html => {:rows => 1, class: "inter"}  %>
+        <%= f.input :text4, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
+        <%= f.input :word4, label: "Word description", as: :text, :input_html => {:rows => 1, class: "inter"}  %>
+        <%= f.input :text5, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
+        <%= f.input :word5, label: "Word description", as: :text, :input_html => {:rows => 1, class: "inter"}  %>
+        <%= f.input :text6, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
+
+  </div>
+  <div class="span6">
+    <p id="preview-explain">
+      Type in the fields to the right and see the results appear below. This should help you envision how your final product will fit together. <strong>You cannot edit after you've pressed submit.</strong>
+    </p>
+    <div class="previewbox">
+      <div id='post-preview' class="textpreview"></div>
+      <div id='post-preview-7' class="wordpreview"></div>
+      <div id='post-preview-2' class="textpreview"></div>
+      <div id='post-preview-8' class="wordpreview"></div>
+      <div id='post-preview-3' class="textpreview"></div>
+      <div id='post-preview-9' class="wordpreview"></div>
+      <div id='post-preview-4' class="textpreview"></div>
+      <div id='post-preview-10' class="wordpreview"></div>
+      <div id='post-preview-5' class="textpreview"></div>
+      <div id='post-preview-11' class="wordpreview"></div>
+      <div id='post-preview-6' class="textpreview"></div>
+    </div>
+      <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
+        Submit your new fill-in!
+      <% end %>
+    <% end %>
+  </div>
+</container>
+
+
+
