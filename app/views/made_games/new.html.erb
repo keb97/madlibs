@@ -4,7 +4,7 @@
       <strong>Note: </strong>You can have a maximum of <strong>6</strong> interword texts and <strong>5</strong> word descriptions.
     </p>
   </div>
-  <div class="span5">
+  <div class="span5" id="new-made">
     <p class = "example">
       <strong>Example</strong><br/>
       Interword text: Once upon a time, were seven<br/>
@@ -24,7 +24,10 @@
         <%= f.input :text5, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
         <%= f.input :word5, label: "Word description", as: :text, :input_html => {:rows => 1, class: "inter"}  %>
         <%= f.input :text6, label: "Interword text", as: :text, :input_html => {:rows => 2, :cols => 48, class: "inter"}  %>
-
+        <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
+          Submit your new fill-in!
+        <% end %>
+      <% end %>
   </div>
   <div class="span6">
     <p id="preview-explain">
@@ -43,10 +46,6 @@
       <div id='post-preview-11' class="wordpreview"></div>
       <div id='post-preview-6' class="textpreview"></div>
     </div>
-      <%= button_tag(type: 'submit', class: "btn btn-large btn-info") do %>
-        Submit your new fill-in!
-      <% end %>
-    <% end %>
   </div>
 </container>
 
