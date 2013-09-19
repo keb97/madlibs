@@ -1,3 +1,6 @@
 <div class="container-narrow"><span class="btn btn-large btn-info"><%= link_to "Make your own fill-in game!", new_made_game_path%></span></div>
 
 <%= MadeGame.where(:id => 15).first.word1 %>
+
+<%= link_to MadeGame.where(:id => 15).first.word1, made_game_path(id: 15) %>
+
