@@ -1,5 +1,5 @@
 Madlibs::Application.routes.draw do
-  root :to => "games#index"
+  root :to => "made_games#index"
 
   resources :games
 
