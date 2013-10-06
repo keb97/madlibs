@@ -2,9 +2,10 @@ development:
   adapter: postgresql
   encoding: utf8
   database: madlibs_development
+  host: localhost
   pool: 5
   timeout: 5000
-  username: kathryn
+  username: postgres
   password: 123
 
 # Warning: The database defined as "test" will be erased and
@@ -14,9 +15,10 @@ test:
   adapter: postgresql
   encoding: utf8
   database: madlibs_test
+  host: localhost
   pool: 5
   timeout: 5000
-  username: kathryn
+  username: postgres
   password: 123
 
 production:
